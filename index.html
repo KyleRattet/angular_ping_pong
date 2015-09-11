@@ -16,7 +16,7 @@
     <div class = "row">
 
 
-    <div ng-controller="PlayerOne">
+    <div ng-controller="Game">
       <div class="col-xs-3">
 
       <button ng-click="countOne()">
@@ -27,17 +27,20 @@
 
         <p class="counter"> {{ scoreOne }}</p>
 
-        <p class="serving" ng-hide="(counterOne + counterTwo) % 2 === 0"> {{ serving }}</p>
+        <p class="serving"> {{ servingOne }}</p>
+
+
+
 
         </div>
 
       </button>
 
       </div>
-    </div>
 
 
-    <div ng-controller="PlayerOne">
+
+<!--     <div ng-controller="PlayerTwo"> -->
       <div class="col-xs-3">
 
       <button ng-click="countTwo()">
@@ -48,13 +51,16 @@
 
           <p class="counter"> {{ scoreTwo }}</p>
 
+          <p class="serving"> {{ servingTwo }}</p>
+
         </div>
 
       </button>
 
-      </div>
+     <!--  </div> -->
     </div>
 
+    </div>
 
 
 
