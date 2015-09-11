@@ -1,3 +1,7 @@
 // add scripts
+var app = angular.module("myApp", []);
 
-console.log("sanity check!");
+app.controller("PingPong", function($scope){
+  $scope.name = "test";
+})
+

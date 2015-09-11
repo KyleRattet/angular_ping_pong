@@ -1,1 +1,16 @@
 /* add custom styles */
+#playerOne {
+  width: 350px;
+  height: 350px;
+  background-color: #2C92DF;
+  color: white;
+  text-align: center;
+}
+
+#playerTwo {
+    width: 350px;
+    height: 350px;
+    background-color: #2C92DF;
+    color: white;
+    text-align: center;
+}
