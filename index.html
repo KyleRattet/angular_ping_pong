@@ -10,34 +10,54 @@
   </head>
   <body>
 
-  <div ng-controller="PingPong">
+
       <h2>Ping Pong Score Keeper</h2>
 
     <div class = "row">
 
+
+    <div ng-controller="PlayerOne">
       <div class="col-xs-3">
+
+      <button ng-click="countOne()">
 
         <div id="playerOne">
 
         <h3>Player 1</h3>
 
+        <p class="counter"> {{ scoreOne }}</p>
+
+        <p class="serving" ng-hide="(counterOne + counterTwo) % 2 === 0"> {{ serving }}</p>
+
         </div>
 
-      </div>
+      </button>
 
+      </div>
+    </div>
+
+
+    <div ng-controller="PlayerOne">
       <div class="col-xs-3">
+
+      <button ng-click="countTwo()">
 
         <div id="playerTwo">
 
           <h3>Player 2</h3>
 
+          <p class="counter"> {{ scoreTwo }}</p>
+
         </div>
 
+      </button>
+
       </div>
-
-
-
     </div>
+
+
+
+
 
 
   </div>
