@@ -13,15 +13,17 @@
 
       <h2>Ping Pong Score Keeper</h2>
 
+    <div ng-controller="Game">
+
     <div class = "row">
 
+    <div class="row">
 
-    <div ng-controller="Game">
       <div class="col-xs-3">
 
-      <button ng-click="countOne()">
+      <button ng-click="countOne()" ng-class="{win: scoreOne ===11}">
 
-        <div id="playerOne">
+        <div id="playerOne" ng-class="{loss: scoreTwo ===11}">
 
         <h3>Player 1</h3>
 
@@ -39,13 +41,11 @@
       </div>
 
 
-
-<!--     <div ng-controller="PlayerTwo"> -->
       <div class="col-xs-3">
 
-      <button ng-click="countTwo()">
+      <button ng-click="countTwo()" ng-class="{win: scoreTwo ===11}">
 
-        <div id="playerTwo">
+        <div id="playerTwo" ng-class="{loss: scoreOne ===11}">
 
           <h3>Player 2</h3>
 
@@ -60,11 +60,19 @@
      <!--  </div> -->
     </div>
 
+
+
     </div>
 
+    <div class="row">
 
+    <div class="col-xs-2 col-xs-offset-2 text-center">
+    <button class="reset" ng-click="reset()">Reset</button>
+    </div>
 
+    </div>
 
+    </div>
 
   </div>
 

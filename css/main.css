@@ -1,8 +1,23 @@
 /* add custom styles */
+button {
+  background-color: #2C92DF;
+}
+
+.reset{
+  background-color: white;
+}
+
+.win {
+  background-color: green;
+}
+
+.loss {
+  background-color: red;
+}
+
 #playerOne {
   width: 350px;
   height: 350px;
-  background-color: #2C92DF;
   color: white;
   text-align: center;
 }
@@ -10,7 +25,6 @@
 #playerTwo {
     width: 350px;
     height: 350px;
-    background-color: #2C92DF;
     color: white;
     text-align: center;
 }
@@ -20,6 +34,7 @@
 }
 
 
-button {
-  background-color: #2C92DF;
-}
+
+
+
+

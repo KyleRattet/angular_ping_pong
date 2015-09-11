@@ -94,6 +94,16 @@ app.controller("Game", function($scope){
     }
   }
 
+  $scope.reset = function () {
+    var serveCount = 0;
+    $scope.servingOne = "";
+    $scope.servingTwo = "serving";
+    $scope.scoreOne = 0;
+    var counterOne = 0;
+    $scope.scoreTwo = 0;
+    var counterTwo = 0;
+  }
+
   // console.log($scope.total);
 
 })
